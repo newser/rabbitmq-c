@@ -384,3 +384,5 @@ if (BUILD_STATIC_LIBS)
 else ()
   message(STATUS "Building rabbitmq as a static library - no")
 endif ()
+
+set(RMQ_LIBRARY_TARGET ${RMQ_LIBRARY_TARGET} PARENT_SCOPE)
